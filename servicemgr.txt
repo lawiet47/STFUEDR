@@ -1,0 +1,4 @@
+To create the service: sc.exe create RTCore64 binPath= "RTCore64.sys" type= kernel displayname= "Vulnerable MSI Driver"
+To start the service: sc.exe start RTCore64
+To stop the service: sc.exe stop RTCore64
+To delete the service: sc.exe delete RTCore64
