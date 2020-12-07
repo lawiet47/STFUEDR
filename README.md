@@ -10,4 +10,4 @@ here: https://www.youtube.com/watch?v=85H4RvPGIX4
 
 The original exploit code: https://br-sn.github.io/Removing-Kernel-Callbacks-Using-Signed-Drivers/
 
-![](png/stfu.png)
+![](png/stfuedr.png)
