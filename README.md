@@ -1,7 +1,7 @@
 # STFUEDR
 Silence EDRs by removing kernel callbacks
 
-A lot of modern AV/EDR technologies monitor process/thread creation events by registering PspSetXXXXNotifyRoutine callback. This code checks for popular EDR/AV driver names and removes them from PspSetXXXXNotifyRoutine callback array.
+A lot of modern AV/EDR technologies monitor process/thread creation events by registering PspSetXXXXNotifyRoutine callback. This code checks for popular EDR/AV driver names and removes them from PspSetXXXXNotifyRoutine callback array. To do so the code checks for a byte pattern that occurs before `jmp PspSetXXXXNotifyRoutine` instructions. The byte pattern differs among windows versions, so this code aims to cover all of them.
 
 Everything is already greatly explained
 
